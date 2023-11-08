@@ -1,6 +1,7 @@
-https://platform.stratascratch.com/coding/10308-salaries-differences?code_type=1
 
 1. task
+
+https://platform.stratascratch.com/coding/10308-salaries-differences?code_type=1
 
 select  
 ABS(
