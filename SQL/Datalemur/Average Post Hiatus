@@ -1,13 +1,13 @@
 
 # https://datalemur.com/questions/sql-average-post-hiatus-1
 
-with filtered_table as 
-(SELECT user_id, max(DATE(post_date))-min(DATE(post_date)) as days_between, count(*) as number_of_posts 
+WITH filtered_table AS
+(SELECT user_id, max(DATE(post_date))-min(DATE(post_date)) AS days_between, count(*) AS number_of_posts 
 FROM posts
-where EXTRACT(YEAR FROM post_date) =2021
+WHERE EXTRACT(YEAR FROM post_date) =2021
 group by user_id 
 ) 
 
-select user_id, days_between
-from filtered_table
-where number_of_posts>=2;
+SELECT user_id, days_between
+FROM filtered_table
+WHERE number_of_posts>=2;
