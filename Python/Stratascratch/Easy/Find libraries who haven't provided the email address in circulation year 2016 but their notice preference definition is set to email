@@ -1,0 +1,4 @@
+# https://platform.stratascratch.com/coding/9924-find-libraries-who-havent-provided-the-email-address-in-2016-but-their-notice-preference-definition-is-set-to-email?code_type=2
+
+df=library_usage
+df[(df['notice_preference_definition'] == 'email') & (df['provided_email_address'] == False) & (df['circulation_active_year'] == 2016)][['home_library_code']].drop_duplicates()
