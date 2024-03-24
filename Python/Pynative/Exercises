@@ -1,0 +1,1 @@
+https://pynative.com/python-data-structure-exercise-for-beginners/
